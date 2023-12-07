@@ -1,9 +1,39 @@
 /******************
  * YOUR CODE HERE *
- ******************
-
-
-
+ ******************/
+function getFirstItemFrom(list){
+  return list[0]
+}
+function getLastItemFrom(list){
+  return list[list.length -1]
+}
+function getIndex3(list){
+  if (list.length >= 4){
+  return list[3]
+}else (list.length < 4)
+  return list[list.length -1]
+}
+function isLongList(list){
+  if (list.length >= 10){
+    return true
+  }else if (list.length < 10){
+    return false
+  }
+}
+function firstItemIsNumber(list){
+  if (typeof list[0] === "number") {
+    return true
+  } else {
+    return false
+  }
+}  
+function secondCharOfThirdString(list){
+  if (typeof list[2][1] === "string"){
+    return list[2][1]
+  }else {
+    return "not a string"
+  }
+}
 
  /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
